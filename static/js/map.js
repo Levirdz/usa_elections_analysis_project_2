@@ -15,7 +15,7 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(myMap);
 
 // Use this link to get the geojson data.
-var link = "static/data/usa_election_2020_data.geojson";
+var link = "../static/data/usa_election_2020_data.geojson";
 
 
 // Function that will determine the color of a neighborhood based on the borough it belongs to
