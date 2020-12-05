@@ -40,7 +40,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ["Biden", "Trump"],
         datasets: [{
-            label: 'Amount of wins in top 10 states based on race',
+            label: 'Amount of wins in top 10 states based on poverty',
             data: [3, 7],
             backgroundColor: [
                 'rgba(44, 130, 201, 1)',
@@ -66,7 +66,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ["Biden", "Trump"],
         datasets: [{
-            label: 'Amount of wins in top 10 states based on race',
+            label: 'Amount of wins in top 10 states based on female rate',
             data: [7, 3],
             backgroundColor: [
                 'rgba(44, 130, 201, 1)',
@@ -92,7 +92,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ["Biden", "Trump"],
         datasets: [{
-            label: 'Amount of wins in top 10 states based on race',
+            label: 'Amount of wins in top 10 states based on male rate',
             data: [1, 5],
             backgroundColor: [
                 'rgba(44, 130, 201, 1)',
