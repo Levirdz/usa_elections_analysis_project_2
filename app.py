@@ -47,17 +47,17 @@ def demographics():
     demo = pd.read_sql_query('''select 
     state,
     population, 
-    population_mal_18/population as per_population_mal_18, 
-    population_fem_18/population as per_population_fem_18, 
-    population_18/population as per_population_18, 
-    poverty_count/population as poverty_count, 
+    population_mal_18 as per_population_mal_18, 
+    population_fem_18 as per_population_fem_18, 
+    population_18 as per_population_18, 
+    poverty_count as poverty_count, 
     poverty_rate as per_poverty_rate, 
-    pop_race_sum/population as pop_race_sum, 
-    pop_white/population as per_pop_white,  
-    pop_black_afr_american/population as per_pop_black_afr_american, 
-    pop_american_indian_alaska/population as per_pop_american_indian_alaska,  
-    pop_asian/population as per_pop_asian,  
-    pop_native_hawaiian_pacific_islands/population as per_pop_native_hawaiian_pacific_islands
+    pop_race_sum as pop_race_sum, 
+    pop_white as per_pop_white,  
+    pop_black_afr_american as per_pop_black_afr_american, 
+    pop_american_indian_alaska as per_pop_american_indian_alaska,  
+    pop_asian as per_pop_asian,  
+    pop_native_hawaiian_pacific_islands as per_pop_native_hawaiian_pacific_islands
     from census''', engine)
 
     demo_json = demo.to_dict(orient = "records")
