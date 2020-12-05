@@ -42,6 +42,10 @@ def map():
 def dashboard(): 
     return render_template("dashboard.html")
 
+@app.route("/conclusion/")
+def conclusion(): 
+    return render_template("conclusion.html")
+
 @app.route("/api/demographics/")
 def demographics(): 
     demo = pd.read_sql_query('''select 
